@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Myproject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- sitemesh 프레임워크 설정
+	filter란 : request, response 객체를 변경할 수 있는 기능을 가진 객체
+ -->
+<filter>
+	<filter-name>sitemesh</filter-name>
+	<filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
+</filter>
+<filter-mapping>
+	<filter-name>sitemesh</filter-name>
+	<url-pattern>/*</url-pattern>
+</filter-mapping>
+</web-app>

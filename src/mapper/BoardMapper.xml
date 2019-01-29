@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.BoardMapper">
+	<select id="boardCount" resultType="int" parameterType="map">
+		select count(*) from boardall where type = #{type}
+		<if test="column != null and find != null">
+			and ${column} like '%${find}%'
+		</if>
+	</select>
+	<select id="boardCountmain" resultType="int" parameterType="map">
+		select count(*) from boardall where id = #{id}
+	</select>
+	<select id="adminboardCount" resultType="int" parameterType="map">
+		select count(*) from boardall 
+		<if test="column != null and find != null">
+			where ${column} like '%${find}%'
+		</if>
+	</select>
+	<select id="commentCount" resultType="int" parameterType="map">
+		select count(*) from comment where num = ${num}
+	</select>
+	<select id="myboardCount" resultType="int" parameterType="map">
+		select count(*) from boardall where id = #{id}
+		<if test="column != null and find != null">
+			and ${column} like '%${find}%'
+		</if>
+	</select>
+	<select id="select" resultType="Board" parameterType="map">
+		select * from boardall where type = #{type}
+		<if test="num != null">
+			and num = #{num}
+		</if>
+		<if test="id != null">
+			and id = #{id}
+		</if>
+		<if test="column != null and find != null">
+			and ${column} like '%${find}%'
+		</if>
+		order by num desc
+		<if test="startrow != null and limit !=null">
+			limit #{startrow},${limit}
+		</if>
+	</select>
+	<select id="myboard" resultType="Board" parameterType="map">
+		select * from boardall where id = #{id}
+		<if test="num != null">
+			and num = #{num}
+		</if>
+		<if test="column != null and find != null">
+			and ${column} like '%${find}%'
+		</if>
+		order by num desc
+		<if test="startrow != null and limit !=null">
+			limit #{startrow},${limit}
+		</if>
+	</select>
+	<select id="adminselect" resultType="Board" parameterType="map">
+		select * from boardall 
+		<if test="num != null">
+			where num = #{num}
+		</if>
+		<if test="column != null and find != null">
+			where ${column} like '%${find}%'
+		</if>
+		order by num desc
+		<if test="startrow != null and limit !=null">
+			limit #{startrow},${limit}
+		</if>
+	</select>
+	<select id="selectmain" resultType="Board" parameterType="map">
+		select * from boardall where id = #{id}
+		<if test="num != null">
+			and num = #{num}
+		</if>
+		<if test="column != null and find != null">
+			and ${column} like '%${find}%'
+		</if>
+		order by num desc
+		<if test="startrow != null and limit !=null">
+			limit #{startrow},${limit}
+		</if>
+	</select>
+</mapper>

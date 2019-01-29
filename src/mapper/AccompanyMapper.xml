@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mapper.AccompanyMapper">
+	<select id="accompanyCount" resultType="int" parameterType="map">
+		select count(*) from accompany where id = #{id}
+		<if test="column != null and find != null">
+			and ${column} like '%${find}%'
+		</if>
+	</select>
+	<select id="accompanyCount2" resultType="int" parameterType="map">
+		select count(*) from accompany where
+		<if test="column != null and find != null">
+			and ${column} like '%${find}%'
+		</if>
+	</select>
+	<select id="myaccompanyCount" resultType="int" parameterType="map">
+		select count(*) from boardall where id = #{id} and type=2
+		<if test="column != null and find != null">
+			and ${column} like '%${find}%'
+		</if>
+	</select>
+	<select id="selectchk" resultType="int" parameterType="map">
+		select chk from accompany where num=#{num} and id=#{id}
+	</select>
+	<select id="maxpno" resultType="int" parameterType="map">
+		select count(id) from accompany where num = #{num} and chk = 2
+	</select>
+	<select id="mycnt" resultType="int" parameterType="map">
+		select count(id) from accompany where id = #{id}
+	</select>
+</mapper>
