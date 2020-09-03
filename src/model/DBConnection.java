@@ -1,17 +1,12 @@
 package model;
 
-import java.io.IOException;
-import java.io.Reader;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
+import java.io.IOException;
+import java.io.Reader;
 
 public class DBConnection {
 	private static SqlSessionFactory sqlMap;
@@ -25,7 +20,7 @@ public class DBConnection {
 		}
 		sqlMap = new SqlSessionFactoryBuilder().build(reader);
 	}
-	private DBConnection() {}//»ý¼ºÀÚ. Á¢±ÙÁ¦¾îÀÚ private : °´Ã¼»ý¼ººÒ°¡
+	private DBConnection() {}//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ private : ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½Ò°ï¿½
 	static SqlSession getSession() {
 		return sqlMap.openSession();
 	}
