@@ -36,7 +36,7 @@ MVC Model 2로 구현 된 여행 커뮤니티 웹 사이트[Travel community web
  7. 내가 작성한 게시물은 한눈에 찾아볼 수 있습니다.
  8. 게시판에서 조건에 의한 검색이 가능하고, 첨부파일 업로드와 댓글기능을 구현하였습니다.
  
- ## 페이지 예시
+ ## 실제 페이지
  ### 시작 페이지
  ![start](https://user-images.githubusercontent.com/46177529/92343757-92e48d00-f0ff-11ea-8ab8-f58266987a47.PNG)
  ### 메인 페이지
