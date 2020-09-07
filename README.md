@@ -60,4 +60,7 @@ MVC Model 2로 구현 된 여행 커뮤니티 웹 사이트[Travel community web
  ![travel3](https://user-images.githubusercontent.com/46177529/92345281-c1646700-f103-11ea-98ee-7167e6463516.PNG)
 
 
-
+## 프로젝트를 마치고..
+ - MVC Model2 Design Pattern에 대해 이해할 수 있었습니다.
+ - JDBC의 사용법을 익히고 적절한 SQL을 작성할 수 있었습니다.
+ - 라이브러리의 사용법과 개념에 대해 파악하였습니다.
