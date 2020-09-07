@@ -4,11 +4,9 @@ MVC Model 2로 구현 된 여행 커뮤니티 웹 사이트[Travel community web
 
 ## 프로젝트 환경
   - Java 8
-  - Spring Framework
   - MVC Model2 Design Pattern
 
 ## 기술 스택
-  - Spring Framework
   - MariaDB
   - Mybatis
   - JSP
