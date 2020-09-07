@@ -57,7 +57,9 @@ MVC Model 2로 구현 된 여행 커뮤니티 웹 사이트[Travel community web
  ### 동행자 모집 상세 페이지
  ![travel1](https://user-images.githubusercontent.com/46177529/92344639-f53e8d00-f101-11ea-81c3-84b183969ef6.PNG)
  ### 동행자 모집 신청 회원 수락/거절 확인
- ![travel2](https://user-images.githubusercontent.com/46177529/92344817-70a03e80-f102-11ea-8d02-daf7a8f7cff1.PNG)
- ![travel3](https://user-images.githubusercontent.com/46177529/92344885-96c5de80-f102-11ea-88ad-9dfb33aa5ba3.PNG)
+ ![travel2](https://user-images.githubusercontent.com/46177529/92345274-bb6e8600-f103-11ea-9684-1dea69237a89.PNG)
+
+ ![travel3](https://user-images.githubusercontent.com/46177529/92345281-c1646700-f103-11ea-98ee-7167e6463516.PNG)
+
 
 
